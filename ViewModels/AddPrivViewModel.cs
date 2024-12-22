@@ -95,7 +95,7 @@ namespace priv.ViewModels
         private void Exit()
         {
             // Логика выхода, например, закрытие окна
-            Application.Current.Shutdown();
+            //Application.Current.Shutdown();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

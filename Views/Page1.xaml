@@ -32,7 +32,7 @@
             <SolidColorBrush Color="#2D2D2D"/>
         </Grid.Background>
 
-        <Button Name="btnback" Content="Back" Margin="10,10,284,446" 
+        <Button Name="btnback" Content="Назад" Margin="10,10,284,446" 
                 Background="#005BAC" Foreground="White" 
                 BorderBrush="#005BAC" BorderThickness="2" 
                 FontSize="16" 

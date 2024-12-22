@@ -39,17 +39,17 @@
                  Background="#3C3C3C" Foreground="White" BorderBrush="#A0A0A0" 
                  BorderThickness="2" Padding="5"/>
 
-        <Button Content="Add" Command="{Binding AddHabitCommand}" Margin="10,170,396,266" 
+        <Button Content="Добавить" Command="{Binding AddHabitCommand}" Margin="10,170,396,266" 
                 Background="#005BAC" Foreground="White" 
                 BorderBrush="#005BAC" BorderThickness="2" FontSize="16" 
                 Style="{StaticResource RoundedButtonStyle}"/>
 
-        <Button Content="Del" Command="{Binding DeleteHabitCommand}" Margin="10,253,400,184" 
+        <Button Content="Удалить" Command="{Binding DeleteHabitCommand}" Margin="10,253,400,184" 
                 Background="#005BAC" Foreground="White" 
                 BorderBrush="#005BAC" BorderThickness="2" FontSize="16" 
                 Style="{StaticResource RoundedButtonStyle}"/>
 
-        <Button Content="Editor" Command="{Binding EditHabitCommand}" Margin="10,357,396,77" 
+        <Button Content="Данные" Command="{Binding EditHabitCommand}" Margin="10,357,396,77" 
                 Background="#005BAC" Foreground="White" 
                 BorderBrush="#005BAC" BorderThickness="2" FontSize="16" 
                 Style="{StaticResource RoundedButtonStyle}"/>

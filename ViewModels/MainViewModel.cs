@@ -28,7 +28,6 @@ namespace priv.ViewModels
             }
         }
 
-        // SelectedHabit
         private Habit selectedHabit;
         public Habit SelectedHabit
         {
@@ -71,7 +70,6 @@ namespace priv.ViewModels
 
         private void AddHabit()
         {
-            MessageBox.Show("qwe");
             if (!string.IsNullOrWhiteSpace(NewHabit))
             {
                 using (DataBase db = new DataBase())
@@ -97,10 +95,16 @@ namespace priv.ViewModels
                 {
                     db.OpenConnection();
                     string query1 = "DELETE FROM Privychki1 WHERE Priv = @Priv";
+                    string query2 = "DELETE FROM Privychki WHERE priv1 = @priv1";
                     using (SqlCommand command1 = new SqlCommand(query1, db.GetConnection()))
                     {
                         command1.Parameters.AddWithValue("@Priv", SelectedHabit.Name);
                         command1.ExecuteNonQuery();
+                    }
+                    using (SqlCommand command2 = new SqlCommand(query2, db.GetConnection()))
+                    {
+                        command2.Parameters.AddWithValue("@priv1", SelectedHabit.Name);
+                        command2.ExecuteNonQuery();
                     }
                 }
                 Habits.Remove(SelectedHabit);

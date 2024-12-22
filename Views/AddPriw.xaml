@@ -30,31 +30,31 @@
             <SolidColorBrush Color="#2D2D2D"/>
         </Grid.Background>
 
-        <Button Content="Save" Margin="18,136,290,27" 
+        <Button Content="Сохранить" Margin="256,124,10,30" 
                 Background="#005BAC" Foreground="White" 
                 BorderBrush="#005BAC" BorderThickness="2" 
                 FontSize="16" Command="{Binding SaveCommand}" 
                 Style="{StaticResource RoundedButtonStyle}"/>
 
         <DatePicker SelectedDate="{Binding SelectedDate}" 
-                    HorizontalAlignment="Left" Margin="109,58,0,0" 
+                    HorizontalAlignment="Left" Margin="109,75,0,0" 
                     VerticalAlignment="Top" />
 
-        <TextBox Text="{Binding CountText}" FontSize="16" Margin="109,100,167,52" 
+        <TextBox Text="{Binding CountText}" FontSize="16" Margin="109,124,167,28" 
                  Background="#3C3C3C" Foreground="White" 
                  BorderBrush="#A0A0A0" BorderThickness="2" Padding="5"/>
 
-        <Label Content="День:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Сколько раз:" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="День:" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Сколько раз:" HorizontalAlignment="Left" Margin="0,124,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Label Content="Имя:" HorizontalAlignment="Left" Margin="12,15,0,0" VerticalAlignment="Top" Foreground="White"/>
 
-        <Button Content="Exit" Command="{Binding ExitCommand}" Margin="289,134,23,27" 
+        <Button Content="Выход" Command="{Binding ExitCommand}" Margin="278,10,10,140" 
                 Background="#005BAC" Foreground="White" 
                 BorderBrush="#005BAC" BorderThickness="2" 
-                FontSize="16" Style="{StaticResource RoundedButtonStyle}"/>
+                FontSize="16" Style="{StaticResource RoundedButtonStyle}" Click="Button_Click"/>
 
         <ComboBox ItemsSource="{Binding Habits}" SelectedItem="{Binding SelectedHabit}" 
-                   HorizontalAlignment="Left" Margin="79,19,0,0" 
+                   HorizontalAlignment="Left" Margin="109,19,0,0" 
                    VerticalAlignment="Top" Width="120" Background="#3C3C3C" Foreground="White" 
                    BorderBrush="#A0A0A0" BorderThickness="2"/>
     </Grid>
